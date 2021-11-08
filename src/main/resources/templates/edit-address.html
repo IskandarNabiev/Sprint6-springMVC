@@ -1,0 +1,16 @@
+<!DOCTYPE HTML>
+<html lang="ru">
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+</head>
+<body>
+<form method="post">
+    <p th:text="${address}"/>
+    <input name="name"/>
+    <input name="lastname"/>
+    <input name="streetName"/>
+    <input name="houseNumber"/>
+    <p><input type="submit" value="Submit" /></p>
+</form>
+</body>

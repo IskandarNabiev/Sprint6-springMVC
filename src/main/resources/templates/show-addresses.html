@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>List of all addresses</title>
+</head>
+<body>
+<table>
+    <tr>
+        <th>firstName</th>
+        <th>lastName</th>
+        <th>address</th>
+        <th>phone</th>
+    </tr>
+    <tr th:each="entry  : ${list}">
+        <td th:text="${entry .value.firstName}"></td>
+        <td th:text="${entry .value.lastName}"></td>
+        <td th:text="${entry .value.address}"></td>
+        <td th:text="${entry .value.phone}"></td>
+    </tr>
+</table>
+</body>
+</html>

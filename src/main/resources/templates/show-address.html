@@ -1,0 +1,25 @@
+<!DOCTYPE HTML>
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:th="http://www.thymeleaf.org">
+<head>
+    <title>Show address</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+</head>
+<body>
+<h1>Single address</h1>
+<table>
+    <tr>
+        <th>firstName</th>
+        <th>lastName</th>
+        <th>address</th>
+        <th>phone</th>
+    </tr>
+    <tr>
+        <td th:text="${address.firstName}"></td>
+        <td th:text="${address.lastName}"></td>
+        <td th:text="${address.address}"></td>
+        <td th:text="${address.phone}"></td>
+    </tr>
+</table>
+</body>
+</html>
